@@ -1,0 +1,28 @@
+.copy {
+  padding-top: vw(375, 230.7);
+  padding-bottom: vw(375, 25);
+  background-image: url("../img/copy_bg_sp@2x.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  @include mq(pc) {
+    padding: vw(1366, 380) 0 vw(1366, 80);
+    background-image: url("../img/copy_bg@2x.jpg");
+  }
+}
+
+.copy-h3 {
+  white-space: nowrap;
+  padding: vw(375, 28) vw(375, 24);
+  white-space: nowrap;
+  font-family: $font_base;
+  font-size: vw(375, 28);
+  font-weight: bold;
+  line-height: 1.29;
+  text-align: center;
+  background-color: $bg-white;
+  @include mq(pc) {
+    padding: vw(1366, 29) vw(1366, 92);
+    font-size: vw(1366, 36);
+  }
+}

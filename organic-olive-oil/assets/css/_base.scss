@@ -1,0 +1,66 @@
+@charset "utf-8";
+// * {
+//   outline: solid 2px red !important;
+// }
+
+body {
+  font-family: $font_base, $font_sub;
+  color: $main-black;
+  background-color: $white;
+  overflow-x: hidden;
+  font-style: normal;
+}
+
+
+//animate
+.animate__animated {
+  opacity: 0;
+}
+
+
+h1, h2, h3, p, figure,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+figure {
+  margin: 0;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  margin: 0 auto;
+  width: vw(375, 345);
+  @include mq(sp) {
+
+    width: vw(1366, 1146);
+  }
+}
+
+.pc-only {
+  display: none;
+  @include mq(pc) {
+    display: block;
+  }
+}
+
+.sp-only {
+  display: block;
+  @include mq(pc) {
+    display: none;
+  }
+}

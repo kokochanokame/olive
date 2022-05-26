@@ -1,0 +1,141 @@
+.appeal {
+  padding-top: vw(375, 66);
+  padding-bottom: vw(375, 58);
+  background-image: url("../img/appeal_bg_sp@2x.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  @include mq(pc) {
+    padding-top: vw(1366, 69);
+    padding-bottom: vw(1366, 84);
+    background-image: url("../img/appeal_bg2x.png");
+  }
+}
+
+.appeal-wrapper {
+  @include mq(pc) {
+    margin-top: vw(1366, 73);
+  }
+}
+
+.appeal-card {
+  margin: 0 auto;
+  padding-top: vw(375, 51);
+  padding-bottom: vw(375, 20);
+  position: relative;
+  width: vw(375, 344);
+  height: vw(375, 397);
+  background-color: $bg-white;
+
+  @include mq(pc) {
+    padding: vw(1366, 32) vw(1366, 99) vw(1366, 60);
+    width: vw(1366, 754);
+    height: vw(1366, 322);
+  }
+  & + & {
+    margin-top: vw(375, 60);
+    @include mq(pc) {
+      margin-top: vw(1366, 59);
+    }
+  }
+}
+
+.appeal-h2 {
+  display: none;
+  @include mq(pc){
+    display: block;
+    font-family: $font_base;
+    font-size: vw(1366, 36);
+    font-weight: bold;
+    text-align: center;
+    color: $red;
+}
+}
+
+
+.appeal-h3 {
+  text-align: center;
+  font-family: $font_base;
+  font-size: vw(375, 20);
+  font-weight: bold;
+  line-height: 1.36;
+  color: $black;
+  @include mq(pc) {
+    font-size: vw(1366, 28);
+  }
+}
+
+.appeal-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  @include mq(pc) {
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+
+}
+
+.appeal-img {
+  width: vw(375, 283.6);
+  height: vw(375, 178);
+  margin: vw(375, 30) auto 0;
+  @include mq(pc) {
+    width: vw(1366, 264);
+    height: vw(1366, 165);
+    margin: vw(1366, 25) auto 0;
+  }
+}
+
+.appeal-text {
+  width: vw(375, 285);
+  margin-top: vw(375, 14.4) auto 0;
+  font-family: $font_base;
+  font-size: vw(375, 16);
+  font-weight: normal;
+  line-height: 1.7;
+  text-align: left;
+  color: $black;
+  @include mq(pc) {
+    margin: 0;
+    font-size: vw(1366, 16);
+    width: vw(1366, 265);
+  }
+}
+
+.appeal-circle {
+  position: absolute;
+  background-color: $white;
+  top: vw(375, -40);
+  left: 1vw;
+  width: vw(375, 80);
+  height: vw(375, 80);
+  border-radius: 50%;
+  border: 3px solid $red;
+  font-family: $font_base;
+  font-size: vw(375, 18);
+  font-weight: normal;
+  line-height: 1.51;
+  text-align: center;
+  color: $red;
+  @include mq(pc) {
+    top: vw(1366, -40);
+    left: vw(1366, -40);
+    width: vw(1366, 80);
+    height: vw(1366, 80);
+    font-size: vw(1366, 18);
+  }
+  span {
+    display: block;
+    font-family: $font_base;
+    font-size: vw(375, 32);
+    font-weight: bold;
+    line-height: 1;
+    color: $red;
+    @include mq(pc) {
+      font-size: vw(1366, 32);
+    }
+  }
+}

@@ -1,0 +1,54 @@
+.message {
+  padding-top: vw(375, 58.8);
+  padding-bottom: vw(375, 62);
+  @include mq(pc) {
+    padding-top: vw(1366, 68.5);
+    padding-bottom: vw(1366, 80);
+  }
+}
+
+.message-h3 {
+  font-family: $font_base;
+  font-size: vw(375, 28);
+  font-weight: bold;
+  text-align: center;
+  @include mq(pc) {
+    font-size: vw(1366, 36);
+  }
+}
+
+.message-wrapper {
+  margin-top: vw(375, 40);
+  @include mq(pc) {
+    margin: vw(1366, 50) auto 0;
+    width: vw(1366, 945);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.message-img {
+  width: vw(375, 259);
+  height: vw(375, 259);
+  margin: 0 auto;
+  @include mq(pc) {
+    width: vw(1366, 259);
+    height: vw(1366, 259);
+    margin: 0;
+  }
+}
+
+.message-text {
+  margin-top: vw(375, 24);
+  font-family: $font_base;
+  font-size: vw(375, 16);
+  font-weight: normal;
+  line-height: 1.7;
+@include mq(pc) {
+  margin: 0;
+  width: vw(1366, 650);
+  font-size: vw(1366, 16);
+}
+
+}

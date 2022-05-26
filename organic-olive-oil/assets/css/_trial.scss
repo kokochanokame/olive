@@ -1,0 +1,131 @@
+//noinspection ALL
+.trial {
+  padding-top: vw(375, 28);
+  padding-bottom: vw(375, 28);
+  background-color: $yellow;
+  @include mq(pc) {
+    padding-top: vw(1366, 60);
+    padding-bottom: vw(1366, 60);
+  }
+}
+
+.trial-mark {
+  margin: 0 auto;
+  text-align: center;
+  font-family: $font_base;
+  font-size: vw(375, 21);
+  color: $red;
+  width: vw(375, 80);
+  height: vw(375, 80);
+  font-weight: bold;
+  line-height: 1.3;
+  border: 3px solid $red;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @include mq(pc) {
+    font-size: vw(1366, 21);
+    width: vw(1366, 80);
+    height: vw(1366, 80);
+  }
+}
+
+.trial-h2 {
+  margin-top: vw(375, 17);
+  text-align: center;
+  font-family: $font_base;
+  font-size: vw(375, 24);
+  font-weight: bold;
+  line-height: 1.13;
+  @include mq(pc) {
+    margin-top: vw(1366, 10);
+    font-size: vw(1366, 36);
+  }
+}
+
+.trial-card {
+  margin-top: vw(375, 40) auto 0;
+  width: vw(375, 345);
+  background-color: $white;
+  padding: vw(375, 21);
+  @include mq(pc) {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: vw(1366, 31);
+    padding: vw(1366, 61) vw(1366, 98);
+  }
+}
+
+.trial-img {
+  width: vw(375, 305.5);
+  height: vw(375, 361);
+  margin: 0 auto;
+  @include mq(pc) {
+    width: vw(1366, 362);
+    height: vw(1366, 416);
+    flex-shrink: 1;
+  }
+}
+
+.trial-card-desc {
+  margin-top: vw(375, 13);
+  @include mq(pc) {
+    margin-top: 0;
+    margin-left: vw(1366, 28);
+    flex-shrink: 1;
+  }
+}
+
+.trial-h3 {
+    white-space: nowrap;
+    text-align: left;
+    font-family: $font_base;
+    font-size: vw(375, 36);
+    font-weight: normal;
+    line-height: 1.17;
+  @include mq(pc) {
+    font-size: vw(1366, 56);
+  }
+  }
+
+.trial-brand {
+  font-family: $font_base;
+  font-size: vw(375, 24);
+  font-weight: normal;
+  line-height: 1.13;
+  color: $sub_black;
+  @include mq(pc) {
+    font-size: vw(1366, 24);
+  }
+}
+
+.trial-price{
+  white-space: nowrap;
+  font-family: $font_base;
+  text-align: left;
+  font-size: vw(375, 64);
+  font-weight: bold;
+  line-height: 1.31;
+  color: $red;
+  @include mq(pc) {
+    font-size: vw(1366, 64);
+  }
+}
+
+.trial-tax {
+  font-size: vw(375, 24);
+  font-weight: normal;
+  line-height: 1.13;
+  @include mq(pc){
+    font-size: vw(1366, 24);
+  }
+}
+
+.trial-btn{
+  @include mq(pc) {
+    margin-left: vw(1366, 100);
+  }
+
+}

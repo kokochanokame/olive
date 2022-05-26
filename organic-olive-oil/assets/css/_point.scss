@@ -1,0 +1,25 @@
+.point {
+  padding: vw(375, 66) 0;
+  background-color: $blue;
+  border-top: 3px solid $white;
+  border-bottom: 3px solid $white;
+  @include mq(pc) {
+    padding: vw(1366, 73.5) 0;
+  }
+}
+
+.point-h2 {
+  white-space: nowrap;
+  font-family: $font_base;
+  font-size: vw(375, 20);
+  font-weight: bold;
+  line-height: 1.7;
+  text-align: center;
+  color: $white;
+  @include mq(pc) {
+    font-size: vw(1366, 32);
+  }
+  span {
+    color: $yellow;
+  }
+}

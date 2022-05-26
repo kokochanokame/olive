@@ -1,0 +1,66 @@
+.suggest {
+  padding-top: vw(375, 60);
+  padding-bottom: vw(375, 61);
+  background-image: url("../img/suggedt_bg_sp@2x.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  @include mq(pc) {
+    padding-top: vw(1366, 80);
+    padding-bottom: vw(1366, 80);
+    background-image: url("../img/suggedt_bg@2x.jpg");
+  }
+}
+
+.suggest-card {
+  padding-top: vw(375, 21);
+  display: block;
+  margin: 0 auto;
+  width: vw(375, 345);
+  height: vw(375, 303);
+  background-color: $bg-white;
+  @include mq(pc) {
+    padding-top: vw(1366, 49);
+    width: vw(1366, 757);
+    height: vw(1366, 388);
+  }
+}
+
+.suggest-h3 {
+  font-family: $font_base;
+  font-size: vw(375, 28);
+  font-weight: bold;
+  line-height: 1;
+  text-align: center;
+  color: $red;
+  @include mq(pc) {
+    font-size: vw(1366, 36);
+  }
+}
+
+.suggest-items {
+  margin: vw(375, 20) auto 0 auto;
+  width: vw(375, 306);
+  @include mq(pc) {
+    margin-top: vw(1366, 26);
+    width: vw(1366, 408);
+  }
+
+  li {
+    white-space: nowrap;
+    font-family: $font_base;
+    font-size: vw(375, 18);
+    font-weight: normal;
+    line-height: 1.51;
+    text-align: left;
+    @include mq(pc) {
+      font-size: vw(1366, 24);
+    }
+    & + & {
+      margin-top: vw(375, 22);
+      @include mq(pc) {
+        margin-top: vw(1366, 22);
+      }
+    }
+  }
+}

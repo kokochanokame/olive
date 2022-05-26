@@ -1,0 +1,91 @@
+.voice {
+  padding-top: vw(375, 53);
+  padding-bottom: vw(375, 60);
+  background-color: $blue;
+  @include mq(pc) {
+    padding-top: vw(1366, 69);
+    padding-bottom: vw(1366, 80);
+  }
+}
+
+.voice-h3 {
+  white-space: nowrap;
+  font-family: $font_base;
+  font-size: vw(375, 28);
+  font-weight: bold;
+  line-height: 1;
+  text-align: center;
+  color: $white-sub;
+  @include mq(pc) {
+    font-size: vw(1366, 36);
+  }
+}
+.voice-wrapper {
+  margin-top: vw(375, 23);
+  display: block;
+  @include mq(pc) {
+    margin-top: vw(1366, 51);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.voice-card {
+  padding:vw(375, 20);
+  width: vw(375, 295);
+  height: vw(375, 237);
+  margin: 0 auto;
+  background-color: $white;
+  @include mq(pc) {
+    padding:vw(1366, 20);
+    width: vw(1366, 295);
+    height: vw(1366, 237);
+    margin: 0;
+  }
+  & + & {
+    margin-top: vw(375, 30);
+    @include mq(pc) {
+      margin: 0;
+    }
+  }
+}
+
+.voice-card-top {
+  display: flex;
+  align-items: center;
+}
+
+.voice-img {
+  width: vw(375, 70);
+  height: vw(375, 96);
+  justify-content: space-between;
+  @include mq(pc) {
+    width: vw(1366, 70);
+    height: vw(1366, 96);
+  }
+}
+
+.voice-fig {
+  white-space: nowrap;
+  font-family: $font_base;
+  font-size: vw(375, 18);
+  font-weight: bold;
+  line-height: 1.51;
+  @include mq(pc) {
+    font-size: vw(1366, 18);
+  }
+}
+
+.voice-text {
+  margin-top: vw(375, 12);
+  font-family: $font_base;
+  font-size: vw(375, 16);
+  font-weight: normal;
+  line-height: 1.7;
+  text-align: left;
+  @include mq(pc) {
+    margin-top: vw(1366, 13);
+    font-size:vw(1366, 16);
+  }
+}
